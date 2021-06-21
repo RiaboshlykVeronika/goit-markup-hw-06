@@ -219,10 +219,8 @@ img {
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-decoration: none;
-    border: none;
     cursor: pointer;
     display: inline-flex;
-    border: 1px solid transparent;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
@@ -615,15 +613,15 @@ cursor: pointer;
     transform: translate(-50%, -50%) scale(1);
     background-color: var(--primary-white-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 50px;
+    padding: 40px;
   }
 
   .modal-form-title {
       font-weight: 700;
       font-size: 20px;
-      line-height: 1,17;
+      line-height: 1.17;
       color: var(--title-text-color);
-      padding-bottom: 12px;  
+      margin-bottom: 12px;  
       text-align: center;
   }
   
@@ -639,7 +637,6 @@ cursor: pointer;
     border: 1px solid #cecbcb;
     padding-left: 40px;
     outline: none;
-    margin-top: 4px;
 }
 
 .modal-form-input:focus {
@@ -662,7 +659,7 @@ cursor: pointer;
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    left: 10px;
+    left: 12px;
 }
 
 .modal-form-field-wrap {
@@ -681,19 +678,19 @@ cursor: pointer;
     border-radius: 4px;
     border: 1px solid var(--primary-text-color);
     outline: none;
-    margin-bottom: 10px;
 }
 
 .modal-form-check-wrap {
     width: 20px;
     height: 20px;
     border: 1px solid var(--title-text-color);
-    display:block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 2px;
     margin-right: 7px;
     background-color: var(--primary-white-color);
     vertical-align: middle;
-
 }
 
 .modal-form-check:checked + .modal-form-check-policy .modal-form-check-wrap {
